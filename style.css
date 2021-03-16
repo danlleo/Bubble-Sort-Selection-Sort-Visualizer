@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'B612', sans-serif;
+    background-color: #FDFDFD;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 5px 10px 0 rgba(0,64,128,.05);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-layout {
+    width: 70%;
+    color: #263646;
+}
+
+.header-layout ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+    margin-right: 30px;
+}
+
+.header-layout h2 {
+    float: left;
+    pointer-events: none;
+    margin: 0;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.btn-algorithm {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: .15s;
+}
+
+.btn-algorithm:hover {
+    color: #4490fa !important;
+}
+
+#generateArray {
+    float: right;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-right: 20px;
+    background-color: #fff;
+    color: #263646;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    transition: .15s;
+}
+
+#generateArray:hover {
+    color: #4490fa !important;
+    border-color: #4490fa !important;
+}
+
+#sortArray {
+    float: right;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    cursor: pointer;
+    color: #263646;
+    outline: none;
+    width: 100px;
+    transition: .15s;
+    margin-right: 20px;
+}
+
+#sortArray:hover {
+    color: #4490fa !important;
+    border-color: #4490fa !important;
+}
+
+#settings {
+    float: right;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    font-size: 18px;
+    color: #ADB5BD;
+    cursor: pointer;
+    transition: .25s;
+    outline: none;
+}
+
+#settings:hover {
+    rotate: 90deg;
+}
+
+form {
+    height: 400px;
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 530px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    justify-content: center;
+    height: 50px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #D6D6D6;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-body label {
+    font-size: 0.8rem;
+    color: #5C5C5C;
+}
+
+.modal-title {
+    color: #242424;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.modal-main-inputs {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin-bottom: 5x;
+}
+
+.modal-input {
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+    outline: none;
+    padding-left: 10px;
+    margin-bottom: 40px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+}
+
+#modal-close {
+    justify-content: center;
+    align-items: center;
+    background-color: #fa3476;
+    cursor: pointer;
+    width: 40%;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    visibility: hidden;
+}
+
+#modal-close:hover {
+    background-color: #fa125f;
+}
+
+#modal-confirm {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    cursor: pointer;
+    width: 40%;
+    color: #1877BD;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: 1px solid #1877BD;
+    font-size: 16px;
+    visibility: hidden;
+}
+
+#modal-confirm:hover {
+    background-color: #1877BD;
+    color: #fff;
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 75%;
+}
+
+.bars {
+    background-color: #7DB4FF;
+    width: 10px;
+    margin: 5px;
+    transition: .10s;
+}
