@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="SettingsWindow.js" defer></script>
+    <script src="ArrayGenerator.js" defer></script>
+    <script src="SpecialMethods.js" defer></script>
+    <script src="SleepTime.js" defer></script>
+    <script src="ChooseAlgorithm.js" defer></script>
+    <script src="CheckValues.js" defer></script>
+    <script src="SelectionSort.js" defer></script>
+    <script src="BubbleSort.js" defer></script>
+    <script src="QuickSort.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-layout">
+            <h2>Sorting Visualizer</h2>
+            <button data-modal-target="#modal" id="settings"><i class="fas fa-cog"></i></button>
+            <button id="sortArray">Sort</button>
+            <button id="generateArray">Generate</button>
+            <ul>
+                <li class="btn-algorithm" id="btn-BubbleSort">Bubble Sort</li>
+                <li class="btn-algorithm" id="btn-SelectionSort">Selection Sort</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="modal-container" id="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Settings</h2>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="modal-main-inputs">
+                    <label>Amount of bars</label><br>
+                    <input type="text" class="modal-input" id="bars-amount-input" placeholder="Choose amount of bars between 5 and 100">
+                    <label>Speed of sorting</label><br>
+                    <input type="text" class="modal-input" id="bars-speed-input" placeholder="Enter speed of sorting between 5 and 500ms">
+                    <label>Additional width for bars</label><br>
+                    <input type="text" class="modal-input" id="bars-width-input" placeholder="Enter additional width for bars between 1 and 10">
+                </div>
+                <div class="modal-footer">
+                    <input type="button" id="modal-close" value="CANCEL"></button>
+                    <input type="submit" id="modal-confirm" value="CONFIRM"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <section class="main-container" id="main-container"></section>
+</body>
+</html>
